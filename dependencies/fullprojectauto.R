@@ -93,7 +93,7 @@ setwd('..')
 for (varlist in processedFiles){
   print(varlist)
   project_title <- varlist
-  eval(parse(text=paste0('raw_data <- read.csv("~/Documents/dev/social-network-analysis/fileprocessing/',varlist,'", header = headervalue)')))
+  eval(parse(text=paste0('raw_data <- read.csv("fileprocessing/',varlist,'", header = headervalue)')))
   source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/dataimporter.R')
   source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/netinitconfig.R')
   source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/plot.R')
