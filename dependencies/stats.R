@@ -60,9 +60,9 @@ invisible(readline(prompt="Press [enter] to continue\n"))
 stats <-1
 if(autoscriptrun==1)
 {
-  source('dependencies/summary.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/summary.R')
 }
 if(autoscriptrun==0)
 {
-  source('dependencies/mainmenu.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
 }

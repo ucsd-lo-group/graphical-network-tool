@@ -18,7 +18,7 @@ cap_version <- version
 # Request loading MATLAB execution
 matlab_execute <- readline('Execute MATLAB data preparations script? [y/n]: ')
 if(tolower(matlab_execute) == "y"){
-  run_matlab_script('~/Documents/dev/social-network-analysis/dataprocessing/Rautodirsearch.m', verbose = TRUE, desktop = FALSE)
+  run_matlab_script('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dataprocessing/Rautodirsearch.m', verbose = TRUE, desktop = FALSE)
 }
 
 # Print instructions to console
@@ -94,19 +94,19 @@ for (varlist in processedFiles){
   print(varlist)
   project_title <- varlist
   eval(parse(text=paste0('raw_data <- read.csv("~/Documents/dev/social-network-analysis/fileprocessing/',varlist,'", header = headervalue)')))
-  source('dependencies/dataimporter.R')
-  source('dependencies/netinitconfig.R')
-  source('dependencies/plot.R')
-  source('dependencies/core.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/dataimporter.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/netinitconfig.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/plot.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/core.R')
   if(runOptional == 1){
-    source('dependencies/subgroups.R')
+    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/subgroups.R')
   }
   if(runOptional == 2){
-    source('dependencies/stats.R')
+    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/stats.R')
   }
   if(runOptional == 12){
-    source('dependencies/subgroups.R')
-    source('dependencies/stats.R')
+    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/subgroups.R')
+    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/stats.R')
   }
-  source('~/Documents/dev/social-network-analysis/dependencies/summary.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/summary.R')
 }

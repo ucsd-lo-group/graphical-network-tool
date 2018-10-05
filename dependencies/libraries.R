@@ -54,11 +54,11 @@ stopifnot(packageinstall_indicator == length(requireinstall_list))
   cat("\n")
   # Loads the main menu script for Interactive Mode
   if(automationFull == 0){
-    source('dependencies/mainmenu.R')
+    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
   }
   # Loads the main menu script for Automation Mode
   if(automationFull == 1){
-    source('dependencies/fullprojectauto.R')
+    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/fullprojectauto.R')
   }
 }
 

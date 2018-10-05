@@ -65,9 +65,9 @@ setwd(projectDir)
 core <- 1
 if(autoscriptrun==1)
 {
-  source('dependencies/netinticonfig.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/netinticonfig.R')
 }
 if(autoscriptrun==0)
 {
-  source('dependencies/mainmenu.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
 }

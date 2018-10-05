@@ -60,8 +60,8 @@ if(weightinput == "n" || weightinput == "N"){
 # Based on main menu option, execute auto or return to menu
 netinitconfig <- 1
 if(autoscriptrun==1){
-  source('dependencies/plot.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/plot.R')
 }
 if(autoscriptrun==0){
-  source('dependencies/mainmenu.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
 }

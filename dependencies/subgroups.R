@@ -58,9 +58,9 @@ if(pre_check_clique_pres >=2)
 subgroups <-1
 if(autoscriptrun==1)
 {
-  source('dependencies/stats.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/stats.R')
 }
 if(autoscriptrun==0)
 {
-  source('dependencies/mainmenu.R')
+  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
 }
