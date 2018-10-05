@@ -12,7 +12,7 @@ if(interactive == 1){
   # Checks if user ran initnetconfig
   if(netinitconfig == 0){
     cat('You are being returned to the main menu. Please run the Initial Network Config script\n')
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R', echo = FALSE)
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R', echo = FALSE)
   }
   
   # Notifies user of the following scripts that have been ran before data export
@@ -35,7 +35,7 @@ if(interactive == 1){
   
   # If user says export is FALSE (N), script will return user to the main menu
   if(export_approval == "N" || export_approval == "n"){
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R', echo = FALSE)
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R', echo = FALSE)
   }
 }
 
@@ -234,7 +234,7 @@ if(interactive == 1){
     stopifnot(stopscripting == 0)
   }
   if(sum_opt_sel == 1){
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R', echo = FALSE)
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R', echo = FALSE)
   }
   # **** END USER INPUT REQUESTS ****#
 }

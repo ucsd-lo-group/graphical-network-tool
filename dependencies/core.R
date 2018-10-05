@@ -66,9 +66,9 @@ artpoint <- articulation.points(g)
 core <- 1
 if(autoscriptrun==1)
 {
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/subgroups.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/subgroups.R')
 }
 if(autoscriptrun==0)
 {
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R')
 }

@@ -36,78 +36,78 @@ menuselect <- readline('Selection: \t')
 validMenuoptions <- c(0,1,2,3,4,5,6,7,8,9,100,101,102,103)
 if(sum(menuselect == validMenuoptions) == 1){
 if(menuselect==0){
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/endScript.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/endScript.R')
 }
 # Runs all scripts automatically based on user input conditions
 if(menuselect==1){
   # Sets Universal variable for all scripts to run automatically (as in version 1.0) based on input
   autoscriptrun <- 1
   # Begins launching the first script process
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/dataimporter.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/dataimporter.R')
 }
 # Clears environmental variables upon user request
 if(menuselect==2){
   rm(list=ls())
   # Initialize Loader Variables
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/varloader.R')
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/varloader.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R')
 }
 # Loads Data Entry option
 if(menuselect==3){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/dataimporter.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/dataimporter.R')
 }
 # Loads Network Initial Configuration option
 if(menuselect==4){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/netinitconfig.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/netinitconfig.R')
 }
 # Loads Network Plot option
 if(menuselect==5){
     autoscriptrun <- 0
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/plot.R')
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/plot.R')
 }
 # Loads Core Analysis option
 if(menuselect==6){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/core.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/core.R')
 }
 # Loads Subgroups Analysis Option
 if(menuselect==7){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/subgroups.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/subgroups.R')
 }
 # Loads Statistical Analysis Section
 if(menuselect==8){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/stats.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/stats.R')
 }
 # Loads Summary and Print Options Statistics
 if(menuselect==9){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/summary.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/summary.R')
 }# Returns the working directory back to the main
 
 # Loads the Text Counter Analyzer
 if(menuselect == 100){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/textcounter.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/textcounter.R')
 }
 # Restores g_original variable
 if(menuselect == 101){
   autoscriptrun <- 0
   g <- g_original
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R')
 }
 # Loads the MATLAB Automation Script
 if(menuselect == 102){
   autoscriptrun <- 0
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/matlabautomation.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/matlabautomation.R')
 }
 # Loads the Markdown HTML Summary Generator
 if(menuselect == 103){
   autoscriptrun <- 0
-  rmarkdown::render('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/summaryMarkdown.R', output_file = paste0(project_title,'.html'))
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
+  rmarkdown::render('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/summaryMarkdown.R', output_file = paste0(project_title,'.html'))
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R')
 }
 }

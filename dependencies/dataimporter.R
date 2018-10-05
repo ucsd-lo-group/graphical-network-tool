@@ -34,8 +34,8 @@ if(attribute_data_present == "Y" || attribute_data_present == "y"){
 # Based on main menu option, execute auto or return to menu
 datacollect <- 1
 if(autoscriptrun==1){
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/netinitconfig.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/netinitconfig.R')
 }
 if(autoscriptrun==0){
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R')
 }

@@ -68,8 +68,8 @@ dev.off()
 # Based on main menu option, execute auto or return to menu
 plot <- 1
 if(autoscriptrun==1){
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/core.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/core.R')
 }
 if(autoscriptrun==0){
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/mainmenu.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R')
 }

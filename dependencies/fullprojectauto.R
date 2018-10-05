@@ -18,7 +18,7 @@ cap_version <- version
 # Request loading MATLAB execution
 matlab_execute <- readline('Execute MATLAB data preparations script? [y/n]: ')
 if(tolower(matlab_execute) == "y"){
-  run_matlab_script('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dataprocessing/Rautodirsearch.m', verbose = TRUE, desktop = FALSE)
+  run_matlab_script('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dataprocessing/Rautodirsearch.m', verbose = TRUE, desktop = FALSE)
 }
 
 # Print instructions to console
@@ -94,19 +94,19 @@ for (varlist in processedFiles){
   print(varlist)
   project_title <- varlist
   eval(parse(text=paste0('raw_data <- read.csv("~/Documents/dev/social-network-analysis/fileprocessing/',varlist,'", header = headervalue)')))
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/dataimporter.R')
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/netinitconfig.R')
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/plot.R')
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/core.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/dataimporter.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/netinitconfig.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/plot.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/core.R')
   if(runOptional == 1){
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/subgroups.R')
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/subgroups.R')
   }
   if(runOptional == 2){
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/stats.R')
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/stats.R')
   }
   if(runOptional == 12){
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/subgroups.R')
-    source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/stats.R')
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/subgroups.R')
+    source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/stats.R')
   }
-  source('https://github.com/ucsd-lo-group/graphical-network-tool/blob/master/dependencies/summary.R')
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/summary.R')
 }
