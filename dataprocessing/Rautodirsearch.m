@@ -19,8 +19,9 @@ cd ~/Documents/dev/social-network-analysis/fileprocessing
 addpath("~/Documents/dev/social-network-analysis/dataprocessing")
 
 listprocessingraw = ls; %Calls list of items to be processed
-listprocessing = strsplit(listprocessingraw, ' ');
+listprocessing = strsplit(listprocessingraw, {' ','\t','\n','\r'});
 listprocessing = strtrim(listprocessing); %Removes trailing spaces
+listprocessing = listprocessing(1:length(listprocessing)-1);
 for var = listprocessing
    %Set the file name to be entered into the script
    userInput = var{1};
