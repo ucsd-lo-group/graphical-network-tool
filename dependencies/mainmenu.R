@@ -107,7 +107,9 @@ if(menuselect == 102){
 # Loads the Markdown HTML Summary Generator
 if(menuselect == 103){
   autoscriptrun <- 0
-  rmarkdown::render('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/summaryMarkdown.R', output_file = paste0(project_title,'.html'))
+  download.file('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/summaryMarkdown.R','summaryMarkdown.R')
+  rmarkdown::render('summaryMarkdown.R', output_file = paste0(project_title,'.html'))
+  file.remove('summaryMarkdown.R')
   source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R')
 }
 }
