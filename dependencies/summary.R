@@ -229,7 +229,9 @@ if(interactive == 1){
   cat('1. Return to the Main Menu\n')
   sum_opt_sel <- readline('Selection: ')
   if(sum_opt_sel == 0){
+    stopscriptfunct <- 1
     source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/endScript.R', echo = FALSE)
+    stopifnot(stopscriptfunct == 0)
   }
   if(sum_opt_sel == 1){
     source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/mainmenu.R', echo = FALSE)
