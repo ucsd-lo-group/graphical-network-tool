@@ -36,7 +36,9 @@ menuselect <- readline('Selection: \t')
 validMenuoptions <- c(0,1,2,3,4,5,6,7,8,9,100,101,102,103)
 if(sum(menuselect == validMenuoptions) == 1){
 if(menuselect==0){
-  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/endScript.R')
+  stopscriptfunct <- 1
+  source('https://raw.githubusercontent.com/ucsd-lo-group/graphical-network-tool/master/dependencies/endScript.R', echo = FALSE)
+  stopifnot(stopscriptfunct == 0)
 }
 # Runs all scripts automatically based on user input conditions
 if(menuselect==1){
